@@ -11,7 +11,7 @@ body {
 header {
     background: #f9f9f9;
     border-bottom: 1px solid #eee;
-    padding: 20px 0;
+    padding:none;
 }
 
 .header-container {
@@ -22,10 +22,11 @@ header {
     justify-content: space-between;
     align-items: center;
     background: #f9f9f9;
+    padding-top: -23px;
 }
 
 .logo {
-    width: 200px;
+    width: 120px;
     height: auto;
 }
 
@@ -270,6 +271,7 @@ nav a {
     color: #666;
     line-height: 1.6;
     margin-bottom: 20px;
+    padding: 0;
 }
 
 .payouts-content .learn-more {
@@ -295,7 +297,7 @@ nav a {
     justify-content: flex-start; /* Align to the left */
     align-items: center;
     padding: 20px;
-    margin-right: -400px;
+    margin-right: -200px;
 }
 
 .payouts-image img {
@@ -321,4 +323,91 @@ nav a {
         justify-content: center; /* Center image for smaller screens */
         margin-right: 50px;
     }
+}
+
+.payouts-section1 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+
+    max-width: 1200px;
+    margin: 20px;
+}
+
+.payouts-content1 {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.payouts-content1 h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.payouts-content1 p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.payouts-content1 .learn-more {
+    font-size: 18px;
+    color: #3b7ddd;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.payouts-content1 .learn-more span {
+    margin-left: 5px;
+    transition: margin-left 0.3s;
+}
+
+.payouts-content1 .learn-more:hover span {
+    margin-left: 10px;
+}
+
+.payouts-image1 {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: center;
+    padding: 20px;
+    margin-right: -200px;
+}
+
+.payouts-image1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+    .payouts-section1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .payouts-content1 {
+        padding: 10px;
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .payouts-image1 {
+        padding: 10px;
+        justify-content: center; /* Center image for smaller screens */
+        margin-right: 50px;
+    }
+
+
+
+
+.imgs{
+    width: 50px;
 }
